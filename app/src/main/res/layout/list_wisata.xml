@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        tools:src="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_item_photo"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/nama_wisata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nama wisata"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            />
+        <TextView
+            android:id="@+id/desc_wisata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="tempat ini bla bla bla"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+</RelativeLayout>
